@@ -15,7 +15,7 @@ namespace gibson4200.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "My MIS 4200 test description.";
+            ViewBag.Message = "My MIS 4200 description.";
 
             return View();
         }
