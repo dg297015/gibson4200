@@ -22,7 +22,7 @@ namespace gibson4200.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "My Personal Contact Information";
+            ViewBag.Message = "My Personal Contact Information.";
 
             return View();
         }
