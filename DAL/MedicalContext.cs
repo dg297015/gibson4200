@@ -11,8 +11,9 @@ namespace gibson4200.DAL
     {
         public MedicalContext() : base("name=DefaultConnection")
         {
-            
 
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MedicalContext,
+                gibson4200.Migrations.MISContext.Configuration>("DefaultConnection"));
         }
 
         public DbSet<Doctor> Doctors { get; set; }
@@ -20,5 +21,10 @@ namespace gibson4200.DAL
         public DbSet<AppointmentDetail> AppointmentDetails { get; set; }
         public DbSet<Patient> Patients { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
+
 }
