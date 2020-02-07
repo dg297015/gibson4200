@@ -5,18 +5,16 @@ using System.Web;
 
 namespace gibson4200.Models
 {
-    public class OrderDetail
+    public class FlightDetail
     {
-        public int orderdetailID { get; set; }
-        public int qtyOrdered { get; set; }
+        public int flightdetailID { get; set; }
+        public int ticketsOrdered { get; set; }
         public decimal price { get; set; }
-
         // the next two properties link the orderDetail to the Order
-        public int orderID { get; set; }
-        public virtual Order Order { get; set; }
-
+        public int AirplaneID { get; set; }
+        public virtual Airplane Airplane { get; set; }
         // the next two properties link the orderDetail to the Product
-        public int productID { get; set; }
-        public virtual Product
+        public int SeatID { get; set; }
+        public virtual Seat Seat { get; set; }
     }
 }
