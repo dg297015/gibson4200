@@ -1,0 +1,51 @@
+﻿@model IEnumerable<gibson4200.Models.FlightDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Airplane.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seat.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ticketsOrdered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Airplane.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seat.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ticketsOrdered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FlightDetailID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FlightDetailID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FlightDetailID })
+        </td>
+    </tr>
+}
+
+</table>

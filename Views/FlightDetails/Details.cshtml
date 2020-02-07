@@ -1,0 +1,50 @@
+﻿@model gibson4200.Models.FlightDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FlightDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Airplane.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Airplane.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seat.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seat.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ticketsOrdered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ticketsOrdered)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FlightDetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
