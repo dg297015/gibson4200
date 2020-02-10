@@ -47,7 +47,7 @@ namespace gibson4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "patientID,description,unitCost")] Patient patient)
+        public ActionResult Create([Bind(Include = "patientID,name,phone,email")] Patient patient)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace gibson4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "patientID,description,unitCost")] Patient patient)
+        public ActionResult Edit([Bind(Include = "patientID,name,phone,email")] Patient patient)
         {
             if (ModelState.IsValid)
             {

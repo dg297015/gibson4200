@@ -11,6 +11,7 @@ namespace gibson4200.Migrations.MISContext
         {
             AutomaticMigrationsEnabled = true;
             MigrationsDirectory = @"Migrations\MISContext";
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(gibson4200.DAL.MedicalContext context)
