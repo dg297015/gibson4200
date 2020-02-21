@@ -32,24 +32,25 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Patient", "index", "Patients")</li>
                     <li>@Html.ActionLink("AppointmentDetail", "index", "AppointmentDetails")</li>
-                    <li>@Html.ActionLink("Appointment", "index", "Appointments")</li>
-                    <li>@Html.ActionLink("Doctor", "index", "Doctors")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </button>
-                <span class="caret">
-                </span>
-                <ul class="dropdown-menu">
-                    <li><a href="#"></a>@Html.ActionLink("Patient", "index", "Patients")</li>
-                    <li><a href="#"></a>@Html.ActionLink("Appointment", "index", "Appointments")</li>
-                    <li><a href="#"></a>@Html.ActionLink("Doctor", "index", "Doctors")</li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Select an Option
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#"></a>@Html.ActionLink("Patient", "index", "Patients")</li>
+                        <li><a href="#"></a>@Html.ActionLink("Appointment", "index", "Appointments")</li>
+                        <li><a href="#"></a>@Html.ActionLink("Doctor", "index", "Doctors")</li>
+                    </ul>
+                    </div>
+                </div>
+
+            
             </div>
         </div>
     </div>
