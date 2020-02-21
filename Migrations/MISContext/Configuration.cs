@@ -11,6 +11,7 @@ namespace gibson4200.Migrations.MISContext
         {
             AutomaticMigrationsEnabled = true;
             MigrationsDirectory = @"Migrations\MISContext";
+            ContextKey = "gibson4200.DAL.MedicalContext";
             AutomaticMigrationDataLossAllowed = true;
         }
 
