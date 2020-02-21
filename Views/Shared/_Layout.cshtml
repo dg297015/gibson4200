@@ -38,7 +38,7 @@
                     <li>@Html.ActionLink("Doctor", "index", "Doctors")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
-            </div>
+            
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
                     <span class="caret"></span>
@@ -51,8 +51,9 @@
                     <li><a href="#"></a>@Html.ActionLink("Doctor", "index", "Doctors")</li>
                 </ul>
             </div>
-            </div>
-
+        </div>
+    </div>
+    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -60,7 +61,7 @@
             <p>&copy; @DateTime.Now.Year - Derek Gibson for MIS4200</p>
         </footer>
     </div>
-</div>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
