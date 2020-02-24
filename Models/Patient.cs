@@ -11,19 +11,19 @@ namespace gibson4200.Models
     {
         public int patientID { get; set; }
 
-        [Display(Name = "name")]
+        [Display(Name = "Full Name")]
         [Required(ErrorMessage = "Name is required!")]
         [StringLength(150)]
 
         public string name { get; set; }
-        [Display(Name = "phone")]
+        [Display(Name = "Mobil Phone")]
         [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^(\(\d{3}\) |\d{3}-)\d{3}-\d{4}$",
             ErrorMessage = "Phone numbers must be in the 3-3-4 digit format")]
 
 
         public string phone { get; set; }
-        [Display(Name = "email")]
+        [Display(Name = "Email")]
         [Required]
         [EmailAddress(ErrorMessage = "You must enter your email address")]
 

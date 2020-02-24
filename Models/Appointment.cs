@@ -18,8 +18,8 @@ namespace gibson4200.Models
 
         public string description { get; set; }
 
-        [Display(Name = "appDate")]
-        [Required(ErrorMessage = "appDate is required!")]
+        [Display(Name = "Appointment Date")]
+        [Required(ErrorMessage = "Appointment Date is required!")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy", ApplyFormatInEditMode = true)]
 
